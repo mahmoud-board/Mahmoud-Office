@@ -1,5 +1,5 @@
 /* مكتبي — بيخلي البرنامج يفتح من غير نت بعد أول مرة. مفيش أي بيانات بتعدي من هنا — البيانات في IndexedDB متشفرة. */
-var C = 'maktabi-9d4ce8ea07';
+var C = 'maktabi-eed03c18c2';
 var CORE = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(C).then(function (c) { return c.addAll(CORE); }).then(function () { return self.skipWaiting(); }));
